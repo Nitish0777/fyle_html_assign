@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us-form {
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact-us-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-us-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us-form input[type="email"],
+.contact-us-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.contact-us-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-us-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us-form button:hover {
+  background-color: #3e8e41;
+}

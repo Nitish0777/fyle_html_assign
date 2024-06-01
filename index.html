@@ -160,23 +160,33 @@
       <h3>OUR PROJECT</h3>
       <h2>WHY WE ARE BEST</h2>
       <div class="project-content">
-        <img src="./images/image.png" alt="Project Image" />
+        <img id="project-image" src="./images/image.png" alt="Project Image" />
         <div class="project-details">
-          <div class="project-detail-item">
+          <div
+            class="project-detail-item"
+            onclick="changeImage('./images/image.png')"
+          >
             <h4>Genderless Kei – Japan’s Hot</h4>
             <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
           </div>
-          <div class="project-detail-item highlighted">
+          <div
+            class="project-detail-item"
+            onclick="changeImage('./images/image2.jpg')"
+          >
             <h4>Better Strategy & Quality</h4>
             <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
           </div>
-          <div class="project-detail-item">
+          <div
+            class="project-detail-item"
+            onclick="changeImage('./images/image3.jpg')"
+          >
             <h4>Genderless Kei – Japan’s Hot</h4>
             <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="company-growth">
       <h3>EXPERTS GROWTH</h3>
       <h2>OUR COMPANY GROWTH</h2>
@@ -219,5 +229,6 @@
         <img src="./images/Group 500.png" alt="companies" />
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

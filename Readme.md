@@ -4,7 +4,7 @@ This project provides the HTML and CSS code for a "Services" section of a webpag
 
 ## Files
 
-- `index.html`: Contains the HTML structure for the "Services" section.
+- `index.html`: Contains the HTML structure for the "Contact Services" section.
 - `styles.css`: Contains the CSS styles for the "Services" section.
 - `images/`: Directory containing the images used in the section.
 

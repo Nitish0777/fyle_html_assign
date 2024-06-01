@@ -8,7 +8,32 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     /> -->
-
+    <style>
+      .container {
+        position: relative;
+        display: flex;
+      }
+      .image {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+      .dots {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+    </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -42,7 +67,7 @@
         </p>
       </span>
       <div class="service-items">
-        <div class="service-item">
+        <div class="service-item" onmouseover="changeDot(0)">
           <img src="./images/1.png" alt="Service 1" />
           <div class="service-text">
             <img src="./images/icon.png" alt="Service Icon" class="icon" />
@@ -56,7 +81,21 @@
             </button>
           </div>
         </div>
-        <div class="service-item">
+        <div class="service-item" onmouseover="changeDot(1)">
+          <img src="./images/3.png" alt="Service 1" />
+          <div class="service-text">
+            <img src="./images/icon.png" alt="Service Icon" class="icon" />
+            <h4>WEB DEVELOPMENT</h4>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque
+            </p>
+            <button onclick="window.open('https://fylehq.com', '_blank')">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div class="service-item" onmouseover="changeDot(2)">
           <img src="./images/2.png" alt="Service 2" />
           <div class="service-text">
             <img src="./images/icon.png" alt="Service Icon" class="icon" />
@@ -70,8 +109,8 @@
             </button>
           </div>
         </div>
-        <div class="service-item">
-          <img src="./images/3.png" alt="Service 3" />
+        <div class="service-item" onmouseover="changeDot(3)">
+          <img src="./images/1.png" alt="Service 3" />
           <div class="service-text">
             <img src="./images/icon.png" alt="Service Icon" class="icon" />
             <h4>WEB DEVELOPMENT</h4>
@@ -84,19 +123,13 @@
             </button>
           </div>
         </div>
-        <div class="service-item">
-          <img src="./images/1.png" alt="Service 4" />
-          <div class="service-text">
-            <img src="./images/icon.png" alt="Service Icon" class="icon" />
-            <h4>WEB DEVELOPMENT</h4>
-            <p>
-              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
-              Pellentesque
-            </p>
-            <button onclick="window.open('https://fylehq.com', '_blank')">
-              Read More
-            </button>
-          </div>
+      </div>
+      <div class="container">
+        <div class="dots">
+          <div class="dot" onclick="changeImage(0)"></div>
+          <div class="dot" onclick="changeImage(1)"></div>
+          <div class="dot" onclick="changeImage(2)"></div>
+          <div class="dot" onclick="changeImage(3)"></div>
         </div>
       </div>
     </section>

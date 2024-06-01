@@ -27,7 +27,7 @@ header {
 
 .text-section h1 {
   color: #ff3366;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ header {
 
 .text-section p {
   font-size: 16px;
-  color: #666;
+  color: #000000;
 }
 
 .text-section button {

@@ -175,13 +175,16 @@ header {
 
 .projects {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 40px;
+  
   background-color: #fff;
 }
 
 .projects h3 {
   color: #ff3366;
+  
   font-size: 20px;
+
   margin-bottom: 10px;
 }
 
@@ -193,7 +196,8 @@ header {
 .project-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .project-content img {
@@ -203,14 +207,20 @@ header {
 }
 
 .project-details {
-  flex: 1;
-  text-align: left;
+  display: flex;
+  /* height: 100%; */
+  flex-direction: column;
 }
 
 .project-detail-item {
-  margin-bottom: 20px;
+  padding: 38px;
   background-color: #f7f7f7;
-  width: 40%;
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.project-detail-item:first-child {
+  border-top: none;
 }
 
 .project-detail-item h4 {
@@ -226,17 +236,25 @@ header {
 .project-detail-item.highlighted {
   background-color: #ff3366;
   color: #fff;
-  border-radius: 5px;
+}
+
+.project-detail-item.highlighted h4,
+.project-detail-item.highlighted p {
+  color: #fff;
+  
 }
 
 .company-growth {
   text-align: center;
   padding: 60px 20px;
+  
   background-color: #f7f7f7;
 }
 
 .company-growth h3 {
   color: #ff3366;
+    height: 100%;
+
   font-size: 20px;
   margin-bottom: 10px;
 }

@@ -100,7 +100,7 @@ header {
 
 .service-item img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .service-text {
@@ -210,6 +210,7 @@ header {
 .project-detail-item {
   margin-bottom: 20px;
   background-color: #f7f7f7;
+  width: 40%;
 }
 
 .project-detail-item h4 {
@@ -225,7 +226,6 @@ header {
 .project-detail-item.highlighted {
   background-color: #ff3366;
   color: #fff;
-  padding: 10px;
   border-radius: 5px;
 }
 
@@ -275,6 +275,10 @@ header {
 .stat-item p {
   font-size: 20px;
   color: #000000;
+}
+
+.stat-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Clients Feedback Section */

@@ -494,7 +494,7 @@ header {
     width: 100%;
     max-width: 100%;
     margin: 10px 0;
-    padding: 20px; /* Ensure padding is consistent */
+    padding: 20px; 
   }
 
   .stat-item h5 {

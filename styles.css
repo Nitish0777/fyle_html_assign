@@ -242,11 +242,13 @@ header {
   color: #ff3366;
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .projects h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .project-content {
@@ -258,8 +260,9 @@ header {
 }
 
 .project-content img {
-  max-width: 100%;
-  height: auto;
+  width: 550px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  object-fit: cover; /* Ensure the image fits within the specified dimensions */
 }
 
 .project-details {
@@ -317,6 +320,8 @@ header {
 
   .project-content img {
     order: -1;
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Auto height for maintaining aspect ratio */
   }
 
   .project-details {
